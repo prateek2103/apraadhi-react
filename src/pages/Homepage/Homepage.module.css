@@ -1,0 +1,79 @@
+.headerContainer {
+  width: 90%;
+  margin: 2% auto;
+  background: url("../../../public/pen.jpg");
+  background-size: cover;
+}
+
+.headerContainer > .contentSection {
+  padding-top: 200px;
+  padding-bottom: 270px;
+  width: 80%;
+  margin: auto;
+}
+
+.headerContainer > .contentSection > h1 {
+  font-size: 50px;
+  font-weight: 400;
+  word-spacing: 10px;
+}
+
+.seperator {
+  width: 90%;
+  margin: 2% auto;
+  height: 2px;
+  background: black;
+}
+
+.bottomContainer {
+  width: 90%;
+  margin: 3% 5%;
+}
+
+.bottomContainer > h1 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.collectionItem {
+  margin-top: 50px;
+}
+
+.collectionImage {
+  height: 500px;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  background: black;
+  height: 500px;
+  width: 416px;
+  border: 3px solid black;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.collectionItem > .overlay > h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.collectionItem > .overlay > h1 > a {
+  color: white;
+  text-decoration: none;
+}
+
+.collectionItem > .overlay > h1 > a:hover {
+  color: white;
+  opacity: 0.7;
+  transition: 0.25s linear;
+}
+.overlay:hover {
+  opacity: 0.8;
+  transition: 0.25s linear;
+}

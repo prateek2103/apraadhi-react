@@ -1,0 +1,18 @@
+nav {
+  background: #ff6a6a;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 30px;
+  color: white !important;
+}
+
+li.nav-item {
+  margin-right: 100px;
+}
+li.nav-item > a {
+  font-size: 20px;
+  color: white;
+}
