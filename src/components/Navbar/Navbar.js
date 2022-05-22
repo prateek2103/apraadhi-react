@@ -1,15 +1,20 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { NavContext } from "../../context/navContext";
 
 const Navbar = () => {
+  const ctx = useContext(NavContext);
+
   return (
     <div>
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style={{ padding: "20" }}
+        style={{ padding: "20", backgroundColor: ctx.color }}
       >
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to="/">
           अपराधी
-        </a>
+        </Link>
 
         <button
           class="navbar-toggler collapsed"
@@ -29,29 +34,29 @@ const Navbar = () => {
         >
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/poems">
                 कविता
-              </a>
+              </Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/user/home">
+              <Link class="nav-link" to="/shayaris">
                 शायरी
-              </a>
+              </Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/user/home">
+              <Link class="nav-link" to="/user/home">
                 कहानी
-              </a>
+              </Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/user/home">
+              <Link class="nav-link" to="/user/home">
                 साहित्य
-              </a>
+              </Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/user/home">
+              <Link class="nav-link" to="/aboutMe">
                 जिवन परिचय
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

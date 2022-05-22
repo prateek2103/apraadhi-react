@@ -6,12 +6,13 @@ import StoriesPhoto from "../../images/StoriesPhoto.jpg";
 
 const Homepage = () => {
   const collectionTypes = [
-    { name: "कविताएं", url: PoetryPhoto },
-    { name: "कहानियां", url: StoriesPhoto },
-    { name: "शायरी", url: ShayariPhoto },
+    { name: "कविताएं", image: PoetryPhoto, url: "poems" },
+    { name: "कहानियां", image: StoriesPhoto, url: "stories" },
+    { name: "शायरी", image: ShayariPhoto, url: "shayaris" },
     {
       name: "साहित्य",
-      url: ReligiousLiteraturePhoto,
+      image: ReligiousLiteraturePhoto,
+      url: "religiousLiterature",
     },
   ];
 
@@ -36,13 +37,13 @@ const Homepage = () => {
               <div className={styles.collectionItem}>
                 <div className={styles.overlay}>
                   <h1>
-                    <a href="#">{item.name}</a>
+                    <a href={`/${item.url}`}>{item.name}</a>
                   </h1>
                 </div>
                 <div
                   className={styles.collectionImage}
                   style={{
-                    backgroundImage: "url(" + item.url + ")",
+                    backgroundImage: "url(" + item.image + ")",
                   }}
                 ></div>
               </div>
